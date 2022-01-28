@@ -22,7 +22,6 @@ header {
 #box1 {
   width: 35%;
 }
-
 #box1 img {
   width: 70px;
   height: auto;
@@ -43,4 +42,18 @@ header {
   font-size: 8px;
   line-height: 11px;
   padding: 0 0 0 12px;
+}
+#lista {
+  color: white;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  background-color: aqua;
+  border: 1px solid black;
+}
+#lista li {
+  width: 100%;
+  padding: 8px;
+  border-left: 1px solid black;
 }
