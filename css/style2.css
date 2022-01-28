@@ -10,13 +10,11 @@ header {
   border-radius: 20px;
   width: 60vw;
   height: 150px;
-
   margin: 20px auto 10px;
   background: linear-gradient(-135deg, #2d5f04, #14772d, #62b169);
 }
 .box {
   width: 40%;
-  display: block;
   color: white;
   text-align: left;
 }
