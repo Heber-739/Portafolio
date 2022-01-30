@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background: linear-gradient(-135deg, #2d5f04, #14772d, #62b169);
+  background: linear-gradient(225deg, #2d5f04, #14772d, #62b169);
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -70,15 +70,62 @@ header {
 .item:focus {
   background-color: #3c500e;
 }
+
 .section {
-  display: ;
+  display: none;
 }
-.item:focus + .section {
+
+.visible {
   display: block;
-  color: white;
-  font-size: 20px;
+  width: 100vw;
 }
-.section1 {
+.section div {
+  width: 90vw;
+  margin: 15px auto;
+  background-color: #3c500e41;
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px 1px black;
+  padding: 5px 1px 5px 10px;
+  text-align: center;
+}
+
+.section p {
+  text-align: justify;
+  line-height: 14px;
+  color: white;
+  width: 95%;
+  padding: 4px 0px;
+  font-size: 0.8em;
+}
+.section a {
+  text-decoration: none;
+}
+.section a:hover {
+  text-decoration: underline;
+}
+.section a:visited {
+  color: blue;
+}
+
+.section2 img {
+  background-color: rgba(102, 152, 209, 0.342);
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 1px;
+  box-shadow: 0.5px 0.5px 1px 0.5px black;
+  margin: 6px;
+  width: 70px;
+  height: auto;
+}
+footer p {
   position: fixed;
-  top: 180px;
+  bottom: 0px;
+  padding: 5px;
+  width: 100vw;
+  height: 10px;
+  background-color: #3c500e;
+  text-align: center;
+  color: white;
+  font-size: 8px;
+  font-style: italic;
 }
