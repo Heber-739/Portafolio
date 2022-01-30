@@ -6,6 +6,8 @@ btnPresentacion.addEventListener('click',function(){
     var offDisplay = document.querySelectorAll(".visible");
     displayOff(offDisplay);
     section1.classList.add("visible");
+    var body = document.querySelector("body");
+    body.style.height = "100%";
     })
 
 var btnLenguajes = document.querySelector("#item2");
@@ -14,6 +16,8 @@ btnLenguajes.addEventListener("click", function(){
     var offDisplay = document.querySelectorAll(".visible");
     displayOff(offDisplay);
     section2.classList.add("visible");
+    body.style.height = "100vh";
+
 })
 
 var btnTecnologias = document.querySelector("#item3");
@@ -22,6 +26,8 @@ btnTecnologias.addEventListener("click", function(){
     var offDisplay = document.querySelectorAll(".visible");
     displayOff(offDisplay);
     section3.classList.add("visible");
+    body.style.height = "100vh";
+
 })
 
 var btnContacto = document.querySelector("#item4");
@@ -30,6 +36,8 @@ btnContacto.addEventListener("click", function(){
     var offDisplay = document.querySelectorAll(".visible");
     displayOff(offDisplay);
     section4.classList.add("visible");
+    body.style.height = "100vh";
+
 })
 
 function displayOff(lista){

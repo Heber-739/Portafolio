@@ -74,14 +74,27 @@ header {
 .section {
   display: none;
 }
-
+#bienvenida p {
+  padding: 25px;
+  width: 80%;
+}
+.section h3 {
+  color: white;
+  margin: 10px 10px 30px;
+}
+#lenguajes {
+  color: white;
+  padding: 10px;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
 .visible {
   display: block;
   width: 100vw;
 }
 .section div {
   width: 90vw;
-  margin: 15px auto;
+  margin: 15px auto 30px;
   background-color: #3c500e41;
   border-radius: 20px;
   box-shadow: 1px 1px 2px 1px black;
@@ -95,7 +108,7 @@ header {
   color: white;
   width: 95%;
   padding: 4px 0px;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 .section a {
   text-decoration: none;
@@ -106,7 +119,9 @@ header {
 .section a:visited {
   color: blue;
 }
-
+.section2 figure {
+  margin-top: 20px;
+}
 .section2 img {
   background-color: rgba(102, 152, 209, 0.342);
   border: 1px solid black;
@@ -114,7 +129,7 @@ header {
   padding: 5px 1px;
   box-shadow: 0.5px 0.5px 1px 0.5px black;
   margin: 6px;
-  width: 70px;
+  width: 60px;
   height: auto;
 }
 footer p {
