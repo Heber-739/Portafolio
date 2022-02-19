@@ -1,2 +1,3 @@
-# Practica personal de git
-Este repositorio se usa para mi practica personal en Git y Github.
+Este repositorio se comenzó a elaborar en base a mi formacion en los programas:
+- One Next Education de Oracle y dictada en Alura Latam.
+- Yo Programo, etapa final de Argentina Programa.
