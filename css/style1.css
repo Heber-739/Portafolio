@@ -1,39 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
 * {
   margin: 0;
   padding: 0;
 }
-/* min-width: 548*/
+:root {
+  --color1: #3c40a4;
+  --color2: #4d68f0;
+  --color3: #8697fe;
+  --color4: #003567;
+  --color5: #119e99;
+  --text-color1: white;
+  --text-color2: black;
+}
+html {
+  scroll-snap-type: y mandatory;
+}
+body {
+  background: linear-gradient(
+    45deg,
+    var(--color3),
+    var(--color2),
+    var(--color1)
+  );
+  background-repeat: no-repeat;
+  height: 90vh;
+  overflow-x: hidden;
+}
+
+/* ----- Comienza el header ------ */
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   border: 1px solid black;
   border-radius: 20px;
-  width: 60vw;
-  height: 150px;
-
-  margin: 20px auto 10px;
-  background: linear-gradient(-135deg, #2d5f04, #14772d, #62b169);
+  width: 80vw;
+  height: 200px;
+  margin: 60px auto 10px 10px;
+  background: var(--color4);
+  box-shadow: 0 0 5px 0.5px black;
+  z-index: -2;
 }
-.box {
-  width: 40%;
-  display: block;
-  color: white;
-  text-align: left;
+#svg {
+  position: absolute;
+  top: 24vh;
+  z-index: -1;
 }
-.box img {
-  width: 100px;
-  height: auto;
-  border: 2px solid black;
+/* ---- clip con foto ----- */
+#box1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 450px;
+  background: linear-gradient(
+    135deg,
+    var(--color1) 0%,
+    var(--color4) 30%,
+    var(--color2) 60%
+  );
+  clip-path: ellipse(210px 190px at 10% 20%);
+  z-index: 2;
+  scroll-snap-align: start;
+}
+#box-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 450px;
+  background: rgba(255, 255, 255, 0.897);
+  clip-path: ellipse(212px 192px at 10% 20%);
+  z-index: 1;
+}
+#box1 img {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 180px;
+  border: 1px solid black;
   border-radius: 100%;
+  box-shadow: 0.5px 0.5px 2px 1px black;
+}
+/* -------------------- */
+
+#box2 {
+  display: block;
+  margin: 0 0 0 30vw;
+  width: 45vw;
+  color: white;
+  text-align: center;
+  border: 0.2px solid white;
+  border-radius: 10px;
+  box-shadow: 0.5px 0.5px 4px 0.5px white;
+}
+header h3 {
+  margin: 0 0 0 30vw;
+  text-align: center;
+  width: 60%;
+  color: white;
+  padding: 5px 15px 15px;
+  font-size: 3.5vw;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: underline;
+}
+.texto-informacion {
+  padding: 5px 10px 3px;
+  font-size: calc(0.4em + 1vw);
+}
+
+/* ----- Comienza la lista ------ */
+
+#lista {
+  display: flex;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  margin: 0px 0px 0px 400px;
+  width: 50vw;
+  color: white;
+  font-size: 0.9em;
+  list-style: none;
+  background-color: var(--color4);
+  border: 1px solid black;
+}
+#lista li {
+  width: 100%;
+  border-left: 1px solid black;
+}
+.item {
+  text-decoration: none;
+  display: block;
+  padding: 4px 5px 6px;
+  color: white;
+}
+.item:hover {
+  border-left: 1px solid black;
+  box-shadow: inset 3px 0px 8px 0px black;
+}
+.item:focus {
+  background-color: var(--color5);
+  box-shadow: inset 3px 0px 2px 0px black;
+}
+/* ---------------------- */
+
+/* ----- Temas ------ */
+
+#temas {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  top: 35px;
+  right: 15px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  float: right;
+  width: 13vw;
+  height: auto;
+  background-color: var(--color3);
+  border-radius: 8px;
   box-shadow: 1px 1px 2px 1px black;
-  vertical-align: middle;
 }
-.box h3 {
-  padding-bottom: 13px;
+.theme-box {
+  width: 1.7em;
+  height: 1.7em;
+  margin: 3% 5%;
+  border-radius: 20%;
+  box-shadow: 0.7px 0.7px 2px 1px rgba(0, 0, 0, 0.562);
 }
-#texto-informacion {
-  font-size: 10px;
-  line-height: 15px;
-  padding: 0 0 0 15%;
+#tema-default {
+  background-color: #003567;
+}
+#tema-rojo {
+  background-color: red;
+}
+#tema-verde {
+  background-color: green;
+}
+#tema-claro {
+  background-color: white;
+}
+#tema-oscuro {
+  background-color: black;
+}
+
+/* ----- Inicia el contenido del Main */
+.section {
+  color: var(--text-color2);
+  height: 100vh;
+  margin: 15vh 0px 25vh;
+  background: linear-gradient(
+    135deg,
+    var(--color3),
+    var(--color2),
+    var(--color1)
+  );
+  text-align: center;
+  scroll-snap-align: start;
+}
+#presentacion {
+  margin: 100vh 0 0 0;
+}
+#presentacion div {
+  width: 90vw;
+  align-items: center;
+  padding: 10px;
+  margin: 20px 10px;
+  border: 2px solid white;
+}
+.section h3 {
+  margin: 10px 10px 30px;
+}
+#lenguajes {
+  color: white;
+  padding: 10px;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+.visible {
+  display: block;
+  width: 100vw;
+}
+
+.section p {
+  text-align: justify;
+  line-height: 14px;
+  width: 95%;
+  padding: 4px 0px;
+  font-size: 0.7em;
+}
+.section a {
+  text-decoration: none;
+}
+.section a:hover {
+  text-decoration: underline;
+}
+.section a:visited {
+  color: blue;
+}
+.section2 figure {
+  margin-top: 20px;
+}
+.section2 img {
+  background-color: rgba(102, 152, 209, 0.342);
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 1px;
+  box-shadow: 0.5px 0.5px 1px 0.5px black;
+  margin: 6px;
+  width: 60px;
+  height: auto;
+}
+footer p {
+  position: ;
+  bottom: 0px;
+  padding: 5px;
+  width: 100vw;
+  height: 10px;
+  background-color: #3c500e;
+  text-align: center;
+  color: white;
+  font-size: 8px;
+  font-style: italic;
 }

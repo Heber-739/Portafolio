@@ -1,4 +1,4 @@
-var btnPresentacion = document.querySelector("#item1");
+/* var btnPresentacion = document.querySelector("#item1");
 
 
 btnPresentacion.addEventListener('click',function(){
@@ -6,7 +6,7 @@ btnPresentacion.addEventListener('click',function(){
     var offDisplay = document.querySelectorAll(".visible");
     displayOff(offDisplay);
     section1.classList.add("visible");
-    var body = document.querySelector("body");
+    var body = document.querySelector("body"); 
     body.style.height = "100%";
     })
 
@@ -45,4 +45,4 @@ function displayOff(lista){
         var element = lista[i];
         element.classList.remove("visible");
     }
-}
+} */

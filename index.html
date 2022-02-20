@@ -4,30 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Presentacion personal</title>
-    <link rel="stylesheet" media="(min-width: 548px)" href="./css/style1.css" />
+    <title>Portafolio</title>
     <link
       rel="stylesheet"
-      media="(min-width: 321px) and (max-width: 547px)"
+      media="(min-width: 1023px)"
+      href="./css/style1.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 768px) and (max-width: 1022px)"
       href="./css/style2.css"
     />
-    <link rel="stylesheet" media="(max-width: 360px)" href="./css/style3.css" />
+    <link rel="stylesheet" media="(max-width: 767px)" href="./css/style3.css" />
   </head>
   <body id="body">
+    <svg
+      width="100%"
+      height="100%"
+      id="svg"
+      viewBox="0 0 1440 400"
+      xmlns="http://www.w3.org/2000/svg"
+      class="transition duration-300 ease-in-out delay-150"
+    >
+      <path
+        d="M 0,400 C 0,400 0,200 0,200 C 146.8,187.6 293.6,175.2 452,189 C 610.4,202.8 780.4000000000001,242.80000000000004 947,249 C 1113.6,255.19999999999996 1276.8,227.59999999999997 1440,200 C 1440,200 1440,400 1440,400 Z"
+        stroke="none"
+        stroke-width="0"
+        fill="#ffffffff"
+        class="transition-all duration-300 ease-in-out delay-150 path-0"
+      ></path>
+    </svg>
+
+    <!-- ----   cajas para seleccionar temas  ------- -->
+    <div id="temas" class="box-border">
+      <div id="tema-default" class="theme-box"></div>
+      <div id="tema-rojo" class="theme-box"></div>
+      <div id="tema-verde" class="theme-box"></div>
+      <div id="tema-oscuro" class="theme-box"></div>
+      <div id="tema-claro" class="theme-box"></div>
+    </div>
+
     <header>
       <div id="box1">
         <figure>
           <img src="./img/Foto.jpeg" alt="Foto Perfil" />
         </figure>
       </div>
+      <div id="box-shadow"></div>
+      <h3>Bienvenido</h3>
       <div id="box2">
-        <h3>Información Personal</h3>
-        <p id="texto-informacion">
-          Heber Duarte <br />
-          Misiones, Argentina <br />
-          30 Años <br />
-          Estudiante avanzado en Matemáticas <br />
-          Entusiasta en Programación
+        <p class="texto-informacion">
+          Mi nombre es Heber Duarte, tengo 30 años y vivo en la ciudad de
+          Posadas, Misiones, Argentina.
+        </p>
+        <p class="texto-informacion">
+          Este es mi primer trabajo desarrollando mi portafolio y me gustaría
+          mucho recibir una retroalimentación de tu parte, podras hacerlo al
+          final de este recorrido.
         </p>
       </div>
     </header>
@@ -35,34 +68,22 @@
     <main>
       <ul id="lista">
         <li>
-          <a id="item1" class="item" href="#">Presentación</a>
+          <a id="item1" class="item" href="#presentacion">Presentación</a>
         </li>
         <li>
-          <a id="item2" class="item" href="#">Lenguajes</a>
+          <a id="item2" class="item" href="#lenguajes">Lenguajes</a>
         </li>
-        <li><a id="item3" class="item" href="#">Tecnologias</a></li>
+        <li><a id="item3" class="item" href="#tecno">Tecnologias</a></li>
         <li>
-          <a id="item4" class="item" href="#">Contacto</a>
+          <a id="item4" class="item" href="#contacto">Contacto</a>
+        </li>
+        <li>
+          <a id="item5" class="item" href="#">Color temas</a>
         </li>
       </ul>
 
-      <!-- Presentación -->
-      <section class="section visible">
-        <div id="bienvenida">
-          <h3>Bienvenido a mi primera presentacion web</h3>
-          <p>
-            En los cuatro apartados superiores podrá encontrar un breve resumen
-            de mi información profesional.
-          </p>
-          <p>
-            Al finalizar, espero puedan dejarme algunas palabras a modo de
-            comentario final.
-          </p>
-        </div>
-      </section>
-
       <!-- Comienzo de la primera sección -->
-      <section class="section section1">
+      <section id="presentacion" class="section section1">
         <div>
           <p>
             Soy estudiante en programación desde Noviembre del 2021. Antes de
@@ -78,6 +99,8 @@
             Actualmente me encuentro desarrollando 3 programas de formacion en
             programación:
           </p>
+        </div>
+        <div id="programas">
           <p>
             <a
               target="_blank"
