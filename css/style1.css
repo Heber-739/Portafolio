@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -28,14 +27,14 @@ body {
   overflow-x: hidden;
 }
 
-/* ----- Comienza el header ------ */
+/* ---------- Comienza el header ----------- */
 header {
-  border: 1px solid black;
-  border-radius: 20px;
   width: 80vw;
   height: 200px;
   margin: 60px auto 10px 10px;
   background: var(--color4);
+  border: 1px solid black;
+  border-radius: 20px;
   box-shadow: 0 0 5px 0.5px black;
   z-index: -2;
 }
@@ -44,7 +43,7 @@ header {
   top: 24vh;
   z-index: -1;
 }
-/* ---- clip con foto ----- */
+/* --------- clip con foto ---------- */
 #box1 {
   position: absolute;
   top: 0;
@@ -80,31 +79,27 @@ header {
   border-radius: 100%;
   box-shadow: 0.5px 0.5px 2px 1px black;
 }
-/* -------------------- */
+/* ------------ Bienvenida --------------- */
 
 #box2 {
-  display: block;
-  margin: 0 0 0 30vw;
-  width: 45vw;
+  margin: 0 0 0 24vw;
+  width: 53vw;
   color: white;
-  text-align: center;
-  border: 0.2px solid white;
-  border-radius: 10px;
-  box-shadow: 0.5px 0.5px 4px 0.5px white;
 }
 header h3 {
-  margin: 0 0 0 30vw;
-  text-align: center;
-  width: 60%;
+  margin: 0 0 15px 33vw;
+  width: 22vw;
+  height: 5vw;
   color: white;
-  padding: 5px 15px 15px;
-  font-size: 3.5vw;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-decoration: underline;
+  font-size: 5vw;
+  font-family: "Akaya Telivigala", cursive;
+  font-weight: lighter;
+  border-bottom: 2.5px solid white;
 }
 .texto-informacion {
-  padding: 5px 10px 3px;
-  font-size: calc(0.4em + 1vw);
+  padding: 5px 6px 3px;
+  font-size: calc(0.3em + 0.9vw);
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ----- Comienza la lista ------ */
@@ -119,51 +114,49 @@ header h3 {
   color: white;
   font-size: 0.9em;
   list-style: none;
-  background-color: var(--color4);
-  border: 1px solid black;
+  border: 1px solid white;
 }
 #lista li {
   width: 100%;
-  border-left: 1px solid black;
+  font-family: "Montserrat", sans-serif;
+  border-left: 1px solid white;
 }
 .item {
   text-decoration: none;
   display: block;
   padding: 4px 5px 6px;
   color: white;
+  background: var(--color4);
 }
 .item:hover {
-  border-left: 1px solid black;
-  box-shadow: inset 3px 0px 8px 0px black;
+  box-shadow: inset 3px 0px 8px 0px white;
 }
 .item:focus {
   background-color: var(--color5);
-  box-shadow: inset 3px 0px 2px 0px black;
 }
 /* ---------------------- */
 
-/* ----- Temas ------ */
-
+/* ----- Cambio de Temas ------ */
 #temas {
   display: flex;
   position: fixed;
-  align-items: center;
+  flex-wrap: wrap;
   top: 35px;
   right: 15px;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-  float: right;
   width: 13vw;
-  height: auto;
   background-color: var(--color3);
   border-radius: 8px;
   box-shadow: 1px 1px 2px 1px black;
+  z-index: 5;
 }
+
 .theme-box {
-  width: 1.7em;
-  height: 1.7em;
-  margin: 3% 5%;
+  width: 3vw;
+  height: 3vw;
+  margin: 3% 4%;
   border-radius: 20%;
+  border: 0.5px solid black;
   box-shadow: 0.7px 0.7px 2px 1px rgba(0, 0, 0, 0.562);
 }
 #tema-default {
@@ -183,74 +176,132 @@ header h3 {
 }
 
 /* ----- Inicia el contenido del Main */
+
 .section {
-  color: var(--text-color2);
   height: 100vh;
-  margin: 15vh 0px 25vh;
   background: linear-gradient(
-    135deg,
+    -45deg,
     var(--color3),
     var(--color2),
     var(--color1)
   );
-  text-align: center;
   scroll-snap-align: start;
 }
+
+/* ---------- Section 1 ---------- */
+
 #presentacion {
   margin: 100vh 0 0 0;
 }
-#presentacion div {
-  width: 90vw;
-  align-items: center;
-  padding: 10px;
-  margin: 20px 10px;
-  border: 2px solid white;
+
+#div-section1 {
+  width: 66vw;
+  position: relative;
+  top: 10vh;
+  left: 17vw;
+  margin: 0px 0px 80px 0px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0.5px black;
+  background: var(--color4);
 }
-.section h3 {
-  margin: 10px 10px 30px;
+#div-section1 p {
+  width: 95%;
+  color: var(--text-color1);
+  font-size: 0.9em;
+  line-height: 1.3em;
+  padding: 5px 15px;
+  font-family: "Montserrat", sans-serif;
 }
-#lenguajes {
-  color: white;
-  padding: 10px;
-  font-size: 0.8em;
-  line-height: 1.4em;
-}
-.visible {
-  display: block;
-  width: 100vw;
+#programas {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.section p {
-  text-align: justify;
-  line-height: 14px;
-  width: 95%;
-  padding: 4px 0px;
-  font-size: 0.7em;
+.logo-section1 {
+  display: block;
+  margin: 10px auto;
+  height: 20%;
 }
-.section a {
+#programas p {
+  width: 25vw;
+  height: 27vw;
+  padding: 0px 10px 0 20px;
+  background: var(--color5);
+  color: white;
+  line-height: 1.5em;
+  font-size: 1.3vw;
+  font-family: "Montserrat", sans-serif;
+  border: 0.5px solid black;
+  border-radius: 25px;
+  box-shadow: 1px 1px 2px 0.5px black;
+}
+.link-section1 {
   text-decoration: none;
+  color: white;
+  font-weight: bolder;
 }
-.section a:hover {
+.link-section1:hover {
   text-decoration: underline;
 }
-.section a:visited {
-  color: blue;
+.link-section1:visited {
+  color: var(--color1);
 }
-.section2 figure {
-  margin-top: 20px;
-}
-.section2 img {
-  background-color: rgba(102, 152, 209, 0.342);
+
+/* ---------- Section 2 ---------- */
+#div-section2 {
+  width: 75vw;
+  position: relative;
+  top: 9vh;
+  left: 6vw;
+  margin: 0px 10px 5vw 0px;
   border: 1px solid black;
-  border-radius: 20px;
-  padding: 5px 1px;
-  box-shadow: 0.5px 0.5px 1px 0.5px black;
-  margin: 6px;
-  width: 60px;
-  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0.5px black;
+  background: var(--color4);
 }
+#div-section2 p {
+  align-items: center;
+  width: 95%;
+  font-size: 0.9em;
+  color: var(--text-color1);
+  line-height: 1.3em;
+  padding: 5px 15px;
+  font-family: "Montserrat", sans-serif;
+}
+#box-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.logo-section2 {
+  float: left;
+  margin: 2px 9px 2px 1px;
+  padding: 5px 2px 3px;
+  height: 4vw;
+  border: 0.5px solid black;
+  border-radius: 10%;
+  box-shadow: 1px 1px 2px 0.5px black;
+}
+#box-logos p {
+  float: left;
+  width: 21vw;
+  height: 14vw;
+  margin: 0.6vw;
+  padding: 10px 10px 0px;
+  background: var(--color5);
+  color: white;
+  line-height: 1.5em;
+  font-size: 1.2vw;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  border: 0.5px solid black;
+  border-radius: 25px;
+  box-shadow: 1px 1px 2px 0.5px black;
+}
+
 footer p {
-  position: ;
   bottom: 0px;
   padding: 5px;
   width: 100vw;

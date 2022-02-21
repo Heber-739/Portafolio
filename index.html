@@ -71,7 +71,7 @@
           <a id="item1" class="item" href="#presentacion">Presentación</a>
         </li>
         <li>
-          <a id="item2" class="item" href="#lenguajes">Lenguajes</a>
+          <a id="item2" class="item" href="#section2">Lenguajes</a>
         </li>
         <li><a id="item3" class="item" href="#tecno">Tecnologias</a></li>
         <li>
@@ -83,8 +83,8 @@
       </ul>
 
       <!-- Comienzo de la primera sección -->
-      <section id="presentacion" class="section section1">
-        <div>
+      <section id="presentacion" class="section">
+        <div id="div-section1">
           <p>
             Soy estudiante en programación desde Noviembre del 2021. Antes de
             eso, me formé en matemáticas en el profesorado de la Universidad
@@ -102,16 +102,30 @@
         </div>
         <div id="programas">
           <p>
+            <img
+              class="logo-section1"
+              src="./img/alura-oracle.png"
+              alt="logo oracle"
+            />
+
             <a
+              class="link-section1"
               target="_blank"
               href="https://www.oracle.com/ar/education/oracle-next-education/"
               >One - Oracle Next-Education</a
-            >, en el que desarrollaremos habilidades Front-end (html, css,
+            >, es desarrollado en la plataforma de aprendizaje Alura Latam. en
+            el que desarrollaremos habilidades Front-end (html, css,
             javascript), estudiaremos en profundidad el lenguaje Java y además
             brindan capacitaciones en soft skills. Finalización: Julio 2022.
           </p>
           <p>
+            <img
+              class="logo-section1"
+              src="https://ltwmcg.infiniteuploads.cloud/sites/53/2021/09/YQP_Logo_WEB3_blanco.png"
+              alt="Logo"
+            />
             <a
+              class="link-section1"
               target="_blank"
               href="https://yoquieroprogramar.conosur.tech/programa/"
               >Yo Quiero Programar</a
@@ -123,7 +137,14 @@
             finalización.
           </p>
           <p>
+            <img
+              id="argpro"
+              class="logo-section1"
+              src="./img/argpro-01.png"
+              alt="logo"
+            />
             <a
+              class="link-section1"
               target="_blank"
               href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa"
               >#YoProgramo</a
@@ -134,32 +155,67 @@
             (Angular); Bases de datos; POO - Buenas prácticas de programación;
             Java; Java Spring boot; Dev Ops. Finalización: Septiembre 2022.
           </p>
-          <p>
-            Espero poder desarrollar habilidades que me permitan insertarme en
-            el mundo del desarrollo de Software y obtener experiencia como
-            Trainee.
-          </p>
         </div>
       </section>
 
       <!-- Comienzo de la Segunda sección -->
-      <section class="section section2">
-        <div>
-          <h2 id="lenguajes">
+      <section id="lenguajes" class="section">
+        <div id="div-section2">
+          <p>
+            Creo que tener las herramientas adecuadas y un plan de trabajo
+            reduce significativamente el tiempo de cualquier persona.
+            <cite
+              >"Dame 6 horas para cortar un árbol y pasaré 4 afilando el hacha"
+              - Abraham Lincoln
+            </cite>
+          </p>
+          <p>
             Estos son los lenguajes de programacion en los que eh desarrollado
-            práctica:
-            <figure>
-              <img src="./img/html.png" alt="html" />
-              <img src="./img/css3.png" alt="css" />
-              <img src="./img/js.png" alt="js" />
-              <img src="./img/python.png" alt="python" />
-              <img src="./img/ruby.png" alt="ruby" />
-            </figure>
-          </h2>
+            práctica y las herramientas en las que me perfecciono dia a dia:
+          </p>
+        </div>
+        <div>
+          <figure id="box-logos">
+            <p>
+              <img class="logo-section2" src="./img/html.png" alt="html" /> Este
+              lenguaje de etiquetas lo desarrollé en casi todos los cursos hasta
+              ahora y tener en claro su semantica es fundamental para el SEO.
+            </p>
+            <p>
+              <img class="logo-section2" src="./img/css3.png" alt="css" />La
+              creatividad solo es una parte pequeña del trabajo, lo fundamental
+              esta en "atornillarse a la silla" y dedicarle el tiempo necesario
+              para alcanzar tus metas.
+            </p>
+            <p>
+              <img class="logo-section2" src="./img/js.png" alt="js" />Someterse
+              a la disciplina de la programación requiere estructura, orden y
+              estrategia. Este lenguaje me enseño la importancia de la
+              fragmentacion de los problemas y la reutilizacion del codigo.
+            </p>
+            <p>
+              <img
+                class="logo-section2"
+                src="./img/python.png"
+                alt="python"
+              />Inicie la logica de programacion auto-didacta con python por
+              recomendación debido a su simpleza. Con este lenguaje realizé
+              practicas de webscripting con manipulación de exel.
+            </p>
+            <p>
+              <img class="logo-section2" src="./img/ruby.png" alt="ruby" />Ini
+            </p>
+            <p>
+              <img class="logo-section2" src="./img/git.png" alt="logo git" />
+            </p>
+            <p>
+              <img class="logo-section2" src="./img/vsc.png" alt="logo git" />
+            </p>
+          </figure>
         </div>
       </section>
       <!-- Comienzo de la tercera sección -->
-      <section class="section section3">
+      <section id="tecno" class="section section3">
         <div>
           <h3>Bienvenido a mi Portafolio</h3>
           <p>
@@ -171,12 +227,17 @@
       </section>
 
       <!-- Comienzo de la cuarta sección -->
-      <section class="section section4">
+      <section id="contacto" class="section section4">
         <div>
           <h3>Bienvenido a mi Portafolio</h3>
           <p>
             Al finalizar su recorrido, espero que pueda dejar una
             opinion/recomendacion que pueda enriquecer mi proyecto.
+          </p>
+          <p>
+            Espero poder desarrollar habilidades que me permitan insertarme en
+            el mundo del desarrollo de Software y obtener experiencia como
+            Trainee.
           </p>
           Muchas Gracias por la visita!!
         </div>
