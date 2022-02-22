@@ -280,6 +280,7 @@ header h3 {
   margin: 2px 9px 2px 1px;
   padding: 5px 2px 3px;
   height: 4vw;
+  background: white;
   border: 0.5px solid black;
   border-radius: 10%;
   box-shadow: 1px 1px 2px 0.5px black;
