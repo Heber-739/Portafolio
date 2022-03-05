@@ -45,7 +45,16 @@ header {
   z-index: -2;
 }
 #svg {
-  display: none;
+  position: absolute;
+  top: 33vh;
+  z-index: -1;
+}
+#white {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 11vh;
+  background: white;
 }
 /* --------- clip con foto ---------- */
 #box1 {
@@ -189,7 +198,7 @@ header h3 {
 /* ---------- Seccion 1: Presentacion ---------- */
 
 #presentacion {
-  margin: 20vh 0 0;
+  margin: 33vh 0 0;
 }
 
 #programas {
@@ -236,7 +245,7 @@ header h3 {
   flex-wrap: wrap;
   width: 46vw;
   height: auto;
-  font-size: 1.5vh;
+  font-size: 1.4vh;
   line-height: 1.2em;
   padding: 5px;
   margin: 0.5vh;
@@ -366,14 +375,14 @@ i.right {
 }
 /* ---------------Seccion 4---------------- */
 #contacto {
-  height: 94vh;
+  height: 93vh;
   display: flex;
   flex-direction: column;
   scroll-snap-align: start;
 }
 #contact_container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   margin: 5vh auto 0px;
   text-align: justify;
   background: var(--color4);
@@ -393,7 +402,7 @@ i.right {
   margin: 3px auto 10px;
 }
 #div-section4 p {
-  padding: 2px 1vh;
+  padding: 0px 1vh;
   font-size: 1.3vh;
 }
 .contact_content {
@@ -404,12 +413,14 @@ i.right {
   padding: 2px 10px;
 }
 #form {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 15% 50% 20%;
+  grid-template-rows: 30px 50px;
+  grid-template-areas: "a b c" "d e c";
+  justify-content: center;
   align-items: center;
   width: 96%;
-  margin: 5px auto 0px;
-  text-align: right;
+  margin: 2px auto 2px;
   font-size: calc(0.4em + 0.7vw);
 }
 .name {
@@ -417,46 +428,59 @@ i.right {
   text-align: left;
   width: 10%;
 }
+label[for="name"] {
+  grid-area: a;
+}
+label[for="message"] {
+  grid-area: d;
+}
 .text {
-  width: 80%;
+  width: 90%;
   text-align: justify;
-  margin: 2px 0px 5px 20px;
+  margin: 2px 0px 5px 2px;
   background-color: white;
 }
 #name {
   height: 20px;
+  grid-area: b;
 }
 #mensaje {
   height: 40px;
+  grid-area: e;
 }
 #email {
   opacity: 0;
 }
 .text::placeholder {
-  font-size: calc(0.5em + 0.4vw);
+  font-size: calc(0.4em + 0.3vw);
   text-align: center;
-  width: 80%;
-  padding: 2px 5%;
+  width: 100%;
 }
 #enviar {
-  width: 35%;
-  font-size: 1.7vh;
+  width: 60%;
+  font-size: 1.3vh;
   height: auto;
   padding: 2px;
   background: var(--color5);
+  padding: 10px 5px;
   margin: 1px auto 5px;
   border-radius: 3px;
+  grid-area: c;
 }
 
 #formulario {
-  width: 96vw;
+  width: 90vw;
   margin: 10px auto 0px;
-  height: 50vh;
+  height: 54vh;
   background: var(--color5);
+  overflow: hidden;
 }
 #formulario iframe {
   width: 100%;
-  height: 49vh;
+  height: 65vh;
+  padding-top: 0;
+  transform-origin: 50% top;
+  transform: scale(0.8);
 }
 /* -------------------- Footer ---------------------- */
 #foot {

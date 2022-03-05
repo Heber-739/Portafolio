@@ -1,36 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: white;
 }
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border: 1px solid black;
-  border-radius: 20px;
-  width: 60vw;
-  height: 150px;
-  margin: 20px auto 10px;
-  background: linear-gradient(-135deg, #2d5f04, #14772d, #62b169);
+:root {
+  --color1: #3c40a4;
+  --color2: #4d68f0;
+  --color3: #8697fe;
+  --color4: #003567;
+  --color5: #119e99;
+}
+html {
+  scroll-snap-type: y mandatory;
+}
+body {
+  background: linear-gradient(
+    45deg,
+    var(--color3),
+    var(--color2),
+    var(--color1)
+  );
+  background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 .box {
-  width: 40%;
-  color: white;
-  text-align: left;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 1px black;
 }
-.box img {
-  width: 100px;
+
+/* ---------- Comienza el header ----------- */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
   height: auto;
-  border: 2px solid black;
-  border-radius: 100%;
-  box-shadow: 1px 1px 2px 1px black;
-  vertical-align: middle;
+  margin: 10vh auto 0px;
+  background: var(--color4);
+  z-index: -2;
 }
-.box h3 {
-  padding-bottom: 13px;
+#svg {
+  position: absolute;
+  top: 30vh;
+  z-index: -1;
 }
-#texto-informacion {
-  font-size: 1px;
-  line-height: 15px;
-  padding: 0 0 0 15%;
+#white {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+  background: white;
+}
+/* --------- clip con foto ---------- */
+#box1 {
+  width: 26vh;
+  height: 26vh;
+  border-radius: 50%;
+  margin: 10px auto;
+  background: linear-gradient(
+    -45deg,
+    var(--color1) 0%,
+    var(--color4) 30%,
+    var(--color2) 60%
+  );
+  z-index: 2;
+  border: 1px solid black;
+  box-shadow: 1px 1px 3px 1px black;
+}
+#box-shadow {
+  position: absolute;
+  top: 0;
+  scroll-snap-align: start;
+}
+#box1 img {
+  height: 20vh;
+  width: 20vh;
+  margin: 3vh;
+  border-radius: 50%;
+}
+/* ------------ Bienvenida --------------- */
+
+#box2 {
+  margin: 10px auto 20px;
+  width: 90%;
+}
+header h3 {
+  margin: 10px auto;
+  text-align: center;
+  width: 53vw;
+  height: 10vw;
+  font-size: 10vw;
+  font-family: "Akaya Telivigala", cursive;
+  font-weight: lighter;
+  border-bottom: 2.5px solid white;
+}
+.texto-informacion {
+  text-align: justify;
+  padding: 15px auto 30px;
+  margin: 30px;
+  font-size: calc(0.3em + 2vw);
+}
+
+/* ------------- Menu ------------- */
+
+#lista {
+  display: flex;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  margin: 0px 5vw;
+  width: 90vw;
+  font-size: 1em;
+  list-style: none;
+  border: 1px solid white;
+}
+#lista li {
+  width: 100%;
+  border-left: 1px solid white;
+}
+.item {
+  text-decoration: none;
+  display: block;
+  padding: 4px 5px 6px;
+  background: var(--color4);
+}
+.item:hover {
+  box-shadow: inset 3px 0px 8px 0px white;
+  background-color: var(--color5);
+}
+
+/* ----- Cambio de Temas ------ */
+#temas {
+  display: none; /* flex */
+  position: fixed;
+  flex-wrap: wrap;
+  top: 35px;
+  right: 15px;
+  justify-content: space-evenly;
+  width: 20vw;
+  background: var(--color3);
+  z-index: 5;
+}
+
+.theme-box {
+  width: 8vw;
+  height: 8vw;
+  margin: 5px;
+}
+#tema-default {
+  background-color: #003567;
+}
+#tema-rojo {
+  background-color: #761622;
+}
+#tema-verde {
+  background-color: #356600;
+}
+
+#tema-gris {
+  background-color: #708090;
+}
+
+/* ---------- Comienza el main --------------- */
+
+.section {
+  height: 100vh;
+  background: linear-gradient(
+    -45deg,
+    var(--color3),
+    var(--color2),
+    var(--color1)
+  );
+  scroll-snap-align: start;
+}
+.div_section {
+  position: relative;
+  top: 10vh;
+  width: 90vw;
+  position: relative;
+  top: 8vh;
+  left: 5vw;
+  margin: 0px 0px 10vh 0px;
+  background: var(--color4);
+}
+.div_section p {
+  width: 95%;
+  font-size: calc(0.2em + 1.2vh);
+  line-height: 1.3em;
+  padding: 4px 15px;
+}
+
+/* ---------- Seccion 1: Presentacion ---------- */
+
+#presentacion {
+  margin: 30vh 0 0 0;
+}
+
+#programas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.logo-section1 {
+  float: left;
+  margin: 10px;
+  width: 160px;
+}
+.div_programas {
+  width: 80vw;
+  height: auto;
+  margin: 10px auto;
+  background: var(--color5);
+  line-height: 1.3em;
+  font-size: calc(0.2em + 1.5vh);
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+.link-section1 {
+  text-decoration: none;
+  font-weight: bolder;
+}
+.link-section1:hover {
+  text-decoration: underline;
+}
+.link-section1:visited {
+  color: var(--color1);
+}
+
+/* ---------- Section 2 ---------- */
+#lenguajes {
+  scroll-snap-align: start;
+}
+
+.leng {
+  float: left;
+  width: 28vw;
+  height: auto;
+  font-size: calc(0.1em + 1.5vw);
+  line-height: 1.5em;
+  padding: 10px 15px;
+  margin: 1vw 0.5vw;
+  background: var(--color5);
+  text-align: justify;
+}
+#box-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.logo-section2 {
+  float: left;
+  margin: 1px 9px 2px 1px;
+  padding: 5px 2px 3px;
+  height: 4vw;
+  background: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+/* ---------- Section 3 ---------- */
+#proyectos {
+  scroll-snap-align: start;
+}
+#div-section3 {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 96vw;
+  height: auto;
+  margin: 5vh 0px 30px 2vw;
+  background: var(--color4);
+}
+#div-section3 p {
+  text-align: justify;
+  font-size: calc(0.2em + 1.5vw);
+  line-height: 1.3em;
+  padding: 5px 15px;
+}
+
+/* ------------ Iframes --------------- */
+.container {
+  width: 90vw;
+  height: 60vh;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.slide {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+}
+
+.iframe {
+  width: 100%;
+  height: 60vh;
+  border: 2px solid #5f5f5f;
+  box-shadow: 0px 0px 2px 1px #5f5f5f;
+}
+
+.slide i {
+  display: flex;
+  align-items: center;
+  width: 4vw;
+  height: 175px;
+  margin: 0px 3px;
+  background-color: #ffffff80;
+  border: 1px solid #464646;
+}
+i.left {
+  border-radius: 12px 0px 0px 12px;
+}
+i.right {
+  border-radius: 0px 12px 12px 0px;
+}
+.slide i img {
+  width: 4vw;
+  height: auto;
+  padding: 100px 0px;
+  border-radius: 5px;
+}
+.slide i:hover {
+  height: 300px;
+}
+.ul_menu {
+  width: 60vw;
+  margin: 0px auto;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+.menu li {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  background: var(--color4);
+  border-radius: 50%;
+}
+.links {
+  font-size: 16px;
+  padding: 10px 0px;
+  text-decoration: none;
+}
+.links:hover {
+  text-decoration: underline;
+}
+/* ---------------Seccion 4---------------- */
+#contacto {
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+}
+#contact_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5vh auto 0px;
+  text-align: justify;
+  background: var(--color4);
+  width: 90vw;
+  height: auto;
+}
+#div-section4 {
+  width: 100%;
+}
+#h3_s4 {
+  width: 55vw;
+  font-size: calc(0.1em + 4.1vw);
+  padding: 0;
+  text-align: center;
+  font-family: "Akaya Telivigala", cursive;
+  border-bottom: 2.5px solid white;
+  margin: 3px auto 10px;
+}
+#div-section4 p {
+  padding: 2px 10px;
+  font-size: 1.3vh;
+}
+.contact_content {
+  width: 100%;
+  height: auto;
+}
+.contact_content h3 {
+  padding: 2px 10px;
+}
+
+#form {
+  display: grid;
+  grid-template-columns: 10% 40% auto;
+  grid-template-rows: 30px 50px;
+  grid-template-areas: "a b c" "d e c";
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto 10px;
+  font-size: calc(0.4em + 0.7vw);
+}
+label[for="name"] {
+  grid-area: a;
+}
+label[for="message"] {
+  grid-area: d;
+}
+.name {
+  padding: 2px;
+  text-align: left;
+  width: 15%;
+}
+.text {
+  width: 85%;
+  text-align: justify;
+  margin: 2px 0px 5px 20px;
+  background-color: white;
+}
+#name {
+  height: 20px;
+  grid-area: b;
+}
+#mensaje {
+  height: 40px;
+  grid-area: e;
+}
+#email {
+  opacity: 0;
+}
+.text::placeholder {
+  font-size: calc(0.5em + 0.4vw);
+  text-align: center;
+  width: 80%;
+  padding: 2px 5%;
+}
+#enviar {
+  grid-area: c;
+  width: 50px;
+  font-size: 1em;
+  height: 60px;
+  background: var(--color5);
+  border-radius: 3px;
+}
+
+#formulario {
+  width: 75vw;
+  margin: 20px auto 0px;
+  height: 55vh;
+  background: var(--color5);
+}
+#formulario iframe {
+  width: 100%;
+  height: 54vh;
+}
+/* -------------------- Footer ---------------------- */
+#foot {
+  display: flex;
+  float: left;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 7vh;
+  box-sizing: border-box;
+  align-items: center;
+  background-color: var(--color4);
+}
+#foot p {
+  font-size: calc(0.2em + 1vw);
+}
+.icon {
+  display: flex;
+  align-items: center;
+}
+#foot a:visited {
+  color: white;
 }

@@ -41,8 +41,15 @@ header {
 }
 #svg {
   position: absolute;
-  top: 24vh;
+  top: 10vh;
   z-index: -1;
+}
+#white {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20vh;
+  background: white;
 }
 /* --------- clip con foto ---------- */
 #box1 {
@@ -268,7 +275,7 @@ header h3 {
   width: 27vw;
   padding: 0;
   height: auto;
-  margin: 5vh auto 10px;
+  margin: 7vh auto 10px;
   background: var(--color4);
 }
 #div-section3 p {
