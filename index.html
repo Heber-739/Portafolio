@@ -21,6 +21,8 @@
       href="./css/style_movile.css"
     />
   </head>
+
+  <!-- -----Body ----- -->
   <body id="body">
     <svg
       width="100%"
@@ -40,256 +42,293 @@
     </svg>
 
     <!-- ----   cajas para seleccionar temas  ------- -->
-    <div id="temas" class="box-border">
-      <div id="tema-default" class="theme-box"></div>
-      <div id="tema-rojo" class="theme-box"></div>
-      <div id="tema-verde" class="theme-box"></div>
-      <div id="tema-oscuro" class="theme-box"></div>
-      <div id="tema-claro" class="theme-box"></div>
+    <div id="temas" class="box">
+      <div id="tema-default" class="theme-box box"></div>
+      <div id="tema-rojo" class="theme-box box"></div>
+      <div id="tema-verde" class="theme-box box"></div>
+      <div id="tema-gris" class="theme-box box"></div>
     </div>
 
-    <header>
+    <header class="box">
       <div id="box1">
         <figure>
-          <img src="./img/Foto.jpeg" alt="Foto Perfil" />
+          <img class="box" src="./img/Foto.jpeg" alt="Foto Perfil" />
         </figure>
       </div>
       <div id="box-shadow"></div>
-      <h3>Bienvenido</h3>
+      <h3>Bienvenido/a</h3>
       <div id="box2">
         <p class="texto-informacion">
           Mi nombre es Heber Duarte, tengo 30 años y vivo en la ciudad de
           Posadas, Misiones, Argentina.
         </p>
         <p class="texto-informacion">
-          Este es mi primer trabajo desarrollando mi portafolio y me gustaría
-          mucho recibir una retroalimentación de tu parte, podras hacerlo al
-          final de este recorrido.
+          Este es mi primer trabajo desarrollando mi portafolio y sería muy
+          bueno para mí recibir una retroalimentación de tu parte. Podrás
+          hacerlo al final de este recorrido.
         </p>
       </div>
     </header>
 
     <main>
-      <ul id="lista">
-        <li>
-          <a id="item1" class="item" href="#presentacion">Presentación</a>
-        </li>
-        <li>
-          <a id="item2" class="item" href="#lenguajes">Lenguajes</a>
-        </li>
-        <li><a id="item3" class="item" href="#proyectos">Proyectos</a></li>
-        <li>
-          <a id="item4" class="item" href="#contacto">Contacto</a>
-        </li>
-        <li>
-          <a id="item5" class="item" href="#">Color temas</a>
-        </li>
-      </ul>
+      <nav>
+        <ul id="lista">
+          <li>
+            <a href="#box-shadow" class="item">Inicio</a>
+          </li>
+          <li>
+            <a id="item1" class="item" href="#presentacion">Presentación</a>
+          </li>
+          <li>
+            <a id="item2" class="item" href="#lenguajes">Lenguajes</a>
+          </li>
+          <li><a id="item3" class="item" href="#proyectos">Proyectos</a></li>
+          <li>
+            <a id="item4" class="item" href="#contacto">Contacto</a>
+          </li>
+          <li>
+            <a id="item5" class="item" href="">Color temas</a>
+          </li>
+        </ul>
+      </nav>
 
       <!-- Comienzo de la primera sección -->
       <section id="presentacion" class="section">
-        <div id="div-section1">
+        <div id="div-section1" class="box div_section">
           <p>
-            Soy estudiante en programación desde Noviembre del 2021. Antes de
+            Soy estudiante de desarrollo web desde mediados del 2021. Antes de
             eso, me formé en matemáticas en el profesorado de la Universidad
             Nacional de Misiones.
           </p>
           <p>
-            Desde entonces, eh estudiado de forma auto-didácta con recursos que
-            pude encontrar en distintas páginas web como: FreeCodeCamp, Pildoras
+            Desde entonces, he estudiado de forma autodidacta, con recursos que
+            pude encontrar en distintas páginas web como FreeCodeCamp, Pildoras
             Informaticas, Soy Dalto, Udemy.
           </p>
           <p>
-            Actualmente me encuentro desarrollando 3 programas de formacion en
-            programación:
+            Actualmente me encuentro desarrollando tres programas de formación
+            en programación:
           </p>
         </div>
         <div id="programas">
-          <p>
+          <div class="div_programas box">
             <img
               class="logo-section1"
               src="./img/alura-oracle.png"
               alt="logo oracle"
             />
 
-            <a
-              class="link-section1"
-              target="_blank"
-              href="https://www.oracle.com/ar/education/oracle-next-education/"
-              >One - Oracle Next-Education</a
-            >, es desarrollado en la plataforma de aprendizaje Alura Latam. en
-            el que desarrollaremos habilidades Front-end (html, css,
-            javascript), estudiaremos en profundidad el lenguaje Java y además
-            brindan capacitaciones en soft skills. Finalización: Julio 2022.
-          </p>
-          <p>
+            <p>
+              <a
+                class="link-section1"
+                target="_blank"
+                href="https://www.oracle.com/ar/education/oracle-next-education/"
+                >One - Oracle Next-Education</a
+              >, es desarrollado en la plataforma de aprendizaje Alura Latam, en
+              la que estamos trabajando habilidades Front-end (html, css,
+              javascript); en breve estudiaremos en profundidad el lenguaje Java
+              y además nos brindan capacitaciones soft skills. Finalización:
+              Julio 2022.
+            </p>
+          </div>
+          <div class="div_programas box">
             <img
               class="logo-section1"
               src="https://ltwmcg.infiniteuploads.cloud/sites/53/2021/09/YQP_Logo_WEB3_blanco.png"
               alt="Logo"
             />
-            <a
-              class="link-section1"
-              target="_blank"
-              href="https://yoquieroprogramar.conosur.tech/programa/"
-              >Yo Quiero Programar</a
-            >
-            de ConoSur Tech, en el que vamos a desarrollar el siguiente stack
-            que consta de 6 diplomados: 1- HTML & CSS; 2- Fundamentos de
-            Programación; 3- JavaScript; 4- Programación en C#; 5- Fundamentos
-            de Bases de Datos; 6- Fundamentos de DevOps. Sin fecha estimada de
-            finalización.
-          </p>
-          <p>
+            <p>
+              <a
+                class="link-section1"
+                target="_blank"
+                href="https://yoquieroprogramar.conosur.tech/programa/"
+                >Yo Quiero Programar</a
+              >
+              pertenece a ConoSur Tech. En él vamos a desarrollar el siguiente
+              stack que consta de 6 diplomados: 1- HTML & CSS; 2- Fundamentos de
+              Programación; 3- JavaScript; 4- Programación en C#; 5- Fundamentos
+              de Bases de Datos; 6- Fundamentos de DevOps. Sin fecha estimada de
+              finalización.
+            </p>
+          </div>
+          <div class="div_programas box">
             <img
               id="argpro"
               class="logo-section1"
               src="./img/argpro-01.png"
               alt="logo"
             />
-            <a
-              class="link-section1"
-              target="_blank"
-              href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa"
-              >#YoProgramo</a
-            >
-            es la segunda etapa del programa Argentina Programa. Se desarrolla
-            en los siguientes modulos: Introducción a desarrollo web y
-            aplicaciones; Front End: estático (html, css y javascript), Dinámico
-            (Angular); Bases de datos; POO - Buenas prácticas de programación;
-            Java; Java Spring boot; Dev Ops. Finalización: Septiembre 2022.
-          </p>
+            <p>
+              <a
+                class="link-section1"
+                target="_blank"
+                href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa"
+                >#YoProgramo</a
+              >
+              es la segunda etapa de la propuesta Argentina Programa. Se
+              desarrolla en los siguientes modulos: Introducción a desarrollo
+              web y aplicaciones; Front End: estático (html, css y javascript),
+              Dinámico (Angular); Bases de datos; POO - Buenas prácticas de
+              programación; Java; Java Spring boot; Dev Ops. Finalización:
+              Septiembre 2022.
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- Comienzo de la Segunda sección -->
       <section id="lenguajes" class="section">
-        <div id="div-section2">
+        <div id="div-section2" class="box div_section">
           <p>
             Creo que tener las herramientas adecuadas y un plan de trabajo
-            reduce significativamente el tiempo de cualquier persona.
+            reduce significativamente el tiempo invertido en realizar una tarea.
+            Una frase conocida hace tiempo lo resume de esta manera:
             <cite
               >"Dame 6 horas para cortar un árbol y pasaré 4 afilando el hacha"
-              - Abraham Lincoln
+              - Abraham Lincoln.
             </cite>
           </p>
           <p>
-            Estos son los lenguajes de programacion en los que eh desarrollado
-            práctica y las herramientas en las que me perfecciono dia a dia:
+            Por ello, actualmente me perfecciono en estas herramientas y
+            lenguajes de programación a través de la práctica sostenida
+            regurosamente día a día:
           </p>
         </div>
         <div>
-          <figure id="box-logos">
-            <p>
-              <img class="logo-section2" src="./img/html.png" alt="html" /> Este
-              lenguaje de etiquetas lo desarrollé en casi todos los cursos hasta
-              ahora y tener en claro su semantica es fundamental para el SEO.
-            </p>
-            <p>
-              <img class="logo-section2" src="./img/css3.png" alt="css" />La
-              creatividad solo es una parte pequeña del trabajo, lo fundamental
-              esta en "atornillarse a la silla" y dedicarle el tiempo necesario
-              para alcanzar tus metas.
-            </p>
-            <p>
-              <img class="logo-section2" src="./img/js.png" alt="js" />Someterse
-              a la disciplina de la programación requiere estructura, orden y
-              estrategia. Este lenguaje me enseño la importancia de la
-              fragmentacion de los problemas y la reutilizacion del codigo.
-            </p>
-            <p>
-              <img
-                class="logo-section2"
-                src="./img/python.png"
-                alt="python"
-              />Inicie la logica de programacion auto-didacta con python por
-              recomendación debido a su simpleza. Con este lenguaje realizé
-              practicas de webscripting con manipulación de exel.
-            </p>
-            <p>
-              <img
-                class="logo-section2"
-                src="./img/ruby.png"
-                alt="ruby"
-              />Desarrollado en Argentina Programa, abordamos la Programacion
-              orientada a objetos de manera superficial, profundizaré en este
-              lenguaje en los proximos meses.
-            </p>
-            <p>
-              <img class="logo-section2" src="./img/git.png" alt="logo git" />Me
-              es de gran utilidad en el dia a dia, para mi su uso es
-              indispensable para el control y registro del trabajo individual y
-              en equipo. Con ayuda de Github y de Trello, es más sencillo la
-              organización.
-            </p>
-            <p>
+          <div id="box-logos">
+            <div class="leng box">
+              <img class="logo-section2" src="./img/html.png" alt="html" />
+              <p>
+                Este lenguaje de etiquetas lo desarrollé en casi todos los
+                cursos hasta ahora y tener en claro su semántica es fundamental
+                para el SEO.
+              </p>
+            </div>
+            <div class="leng box">
+              <img class="logo-section2" src="./img/css3.png" alt="css" />
+              <p>
+                La creatividad es una parte importante pero pequeña del trabajo.
+                Lo fundamental esta en "atornillarse a la silla" y dedicarle el
+                tiempo necesario para desarrollar el estilo propio.
+              </p>
+            </div>
+            <div class="leng box">
+              <img class="logo-section2" src="./img/js.png" alt="js" />
+              <p>
+                Someterse a la disciplina de la programación requiere
+                estructura, orden y estrategia. Este lenguaje me enseñó la
+                importancia de la fragmentación de los problemas y la
+                reutilización del código.
+              </p>
+            </div>
+            <div class="leng box">
+              <img class="logo-section2" src="./img/python.png" alt="python" />
+              <p>
+                Inicié la lógica de programación autodidacta con python por
+                recomendación, debido a su simpleza. Con este lenguaje realizé
+                prácticas de juegos, webscripting con manipulación de Excel.
+              </p>
+            </div>
+            <div class="leng box">
+              <img class="logo-section2" src="./img/ruby.png" alt="ruby" />
+              <p>
+                Desarrollado en Argentina Programa, abordamos la Programación
+                Orientada a Objetos de manera superficial. Profundizaré en este
+                lenguaje en los próximos meses.
+              </p>
+            </div>
+            <div class="leng box">
+              <img class="logo-section2" src="./img/git.png" alt="logo git" />
+              <p>
+                Lo incorporo en todos mis proyectos ya que su uso es
+                indispensable para el control y registro del trabajo individual
+                y en equipo. Con ayuda de Github y de Trello, es más sencillo la
+                organización.
+              </p>
+            </div>
+            <div class="leng box">
               <img
                 class="logo-section2"
                 src="./img/vsc.png"
                 alt="logo Visual Studio Code"
-              />Gracias a sus extenciones, trato de personalizar mi area de
-              trabajo y de explotar todas las herramientas que me brinda esta
-              IDE.
-            </p>
-            <p>
-              <img
-                class="logo-section2"
-                src="./img/java.png"
-                alt="logo java"
-              />Tengo poca practica con la sintaxis, sin embargo, tengo muchas
-              ansias de profundizar en este lenguaje para indagar en
-              aplicaciones Android.
-            </p>
-          </figure>
+              />
+              <p>
+                Gracias a sus extenciones, trato de personalizar mi area de
+                trabajo y de explotar todas las herramientas que me brinda esta
+                IDE.
+              </p>
+            </div>
+            <div class="leng box">
+              <img class="logo-section2" src="./img/java.png" alt="logo java" />
+              <p>
+                Tengo poca practica con la sintaxis, sin embargo, tengo muchas
+                ansias de profundizar en este lenguaje para indagar en sus
+                aplicaciones.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Comienzo de la tercera sección -->
       <section id="proyectos" class="section">
-        <div id="div-section3">
+        <div id="div-section3" class="box">
           <p>
-            Al finalizar su recorrido, espero que pueda dejar una
-            opinion/recomendacion que pueda enriquecer mi proyecto.
+            Aquí estan los proyectos finalizados que desarrollé hasta el
+            momento:
+          </p>
+          <p>
+            En primer lugar, un encriptador de texto. Encripta y desencripta las
+            vocales del texto ingresado.
+          </p>
+          <p>
+            En segundo lugar, el clásico juego del ahorcado. Es un proyecto más
+            complejo que el anterior, incluyendo un canvas responsivo.
+          </p>
+          <p>
+            El tercero, Cho-Han es un juego de apuestas. Originalmente lo
+            desarrollé en python y lo reescribí en javascript para montarlo en
+            una aplicación web.
           </p>
         </div>
         <div class="container">
           <div class="slider">
             <div id="slide1" class="slide">
-              <i
+              <i class="left"
                 ><a href="#slide3"><img src="./img/left.png" /></a
               ></i>
               <iframe
                 class="iframe"
                 src="https://heber-739.github.io/Alura-Challenge-Encriptador-de-texto/"
               ></iframe
-              ><i
+              ><i class="right"
                 ><a href="#slide2"><img src="./img/right-01.png" /></a
               ></i>
             </div>
           </div>
           <div class="slider">
             <div id="slide2" class="slide">
-              <i
+              <i class="left"
                 ><a href="#slide1"><img src="./img/left.png" /></a
               ></i>
               <iframe
                 class="iframe"
                 src="https://heber-739.github.io/Challenge-2-Juego-del-Ahorcado/"
               ></iframe
-              ><i
+              ><i class="right"
                 ><a href="#slide3"><img src="./img/right-01.png" /></a
               ></i>
             </div>
           </div>
           <div class="slider">
             <div id="slide3" class="slide">
-              <i
+              <i class="left"
                 ><a href="#slide2"><img src="./img/left.png" /></a
               ></i>
               <iframe
                 class="iframe"
                 src="https://heber-739.github.io/Juego-Cho-Han/"
               ></iframe
-              ><i
+              ><i class="right"
                 ><a href="#slide1"><img src="./img/right-01.png" /></a
               ></i>
             </div>
@@ -330,32 +369,91 @@
 
       <!-- Comienzo de la cuarta sección -->
       <section id="contacto" class="section section4">
-        <div>
-          <h3>Bienvenido a mi Portafolio</h3>
-          <p>
-            Al finalizar su recorrido, espero que pueda dejar una
-            opinion/recomendacion que pueda enriquecer mi proyecto.
-          </p>
-          <p>
-            Espero poder desarrollar habilidades que me permitan insertarme en
-            el mundo del desarrollo de Software y obtener experiencia como
-            Trainee.
-          </p>
-          Muchas Gracias por la visita!!
+        <div id="contact_container" class="box">
+          <div id="div-section4">
+            <h3 id="h3_s4">¡Gracias por llegar hasta aquí!</h3>
+            <p>
+              Como dije al principio, la retroalimentación es muy importante
+              para mi. Otras perspectivas pueden brindarme formas de pulir y
+              enriquecer mi tabajo.
+            </p>
+            <p>
+              Para su comodidad, está disponible un google form en el cual puede
+              dejarme un comentario rápido, sin necesidad de abrir una ventana
+              de correo.
+            </p>
+            <p>Para un contacto formal, hacerlo aquí:</p>
+          </div>
+          <div class="contact_content">
+            <form id="form" action="" class="form">
+              <label for="name" class="name">Nombre:</label>
+              <input
+                name="name"
+                class="text"
+                required
+                type="text"
+                id="name"
+                autocomplete="off"
+                placeholder="Ingrese su nombre"
+              />
+              <label for="message" class="name">Mensaje:</label>
+              <textarea
+                id="mensaje"
+                class="text"
+                name="message"
+                id=""
+                placeholder="Este mensaje se enviará desde su aplicación de mensajería predeterminada."
+                cols="30"
+                rows="10"
+              ></textarea>
+              <button id="enviar" type="submit" class="box">
+                Enviar correo
+              </button>
+            </form>
+
+            <a
+              href="mailto:heberduarteryr@gmail.com"
+              id="email"
+              target="_blank"
+            ></a>
+          </div>
         </div>
-        <form action="">
-          <textarea
-            name="comentario"
-            id="opinion"
-            cols="30"
-            rows="10"
-          ></textarea>
-          <button>Enviar</button>
-        </form>
+
+        <aside>
+          <div id="formulario" class="box">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSfs54np7seY-GAINjTFrVWYth-wcRS77Htbp2kVA78JsgvEKw/viewform?embedded=true"
+              width="640"
+              height="530"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              >Cargando…</iframe
+            >
+          </div>
+        </aside>
       </section>
     </main>
     <footer>
-      <p>© 2022 - <strong>Heber Duarte</strong></p>
+      <div id="foot">
+        <p>
+          Autoría <strong><em>Heber Duarte</em></strong>
+        </p>
+        <p>Icon by <a href="https://iconos8.es/" target="_blank">Icons8</a></p>
+        <p class="icon">
+          <img src="./img/github.png" alt="logo github" /><a
+            href="https://github.com/Heber-739"
+            target="_blank"
+            >Github</a
+          >
+        </p>
+        <p class="icon">
+          <img src="./img/linkedin.png" alt="linkedin" /><a
+            href="https://www.linkedin.com/in/heber-duarte-49a84b155/"
+            >Linkedin</a
+          >
+        </p>
+      </div>
     </footer>
     <script src="./js/script.js" type="text/javascript"></script>
   </body>
